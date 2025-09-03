@@ -16,13 +16,13 @@ The service is ready for deployment via GitHub Actions to a remote server.
 
 ## 📂 Project Structure
 .
-├── .dockerignore # Files ignored by Docker
-├── .gitignore # Files ignored by Git
-├── Dockerfile # Docker build file
-├── package.json # Node.js project manifest
-├── server.js # Express app
-├── .env (ignored) # Environment variables (not committed)
-└── README.md # Documentation
+├── .dockerignore         <br>
+├── .gitignore           <br>
+├── Dockerfile           <br>
+├── package.json          <br>
+├── server.js             <br>
+├── .env (ignored)        <br>
+└── README.md           <br>
 
 
 ---
@@ -30,37 +30,38 @@ The service is ready for deployment via GitHub Actions to a remote server.
 ## ⚙️ Environment Variables
 Create a `.env` file in the project root:
 
-```env
+````env
 SECRET_MESSAGE=This is a top secret 🚀
 USERNAME=admin
 PASSWORD=supersecret
+````
 
 🖥️ Run Locally
 
-Install dependencies:
+````Install dependencies:
 npm install
-
+````
 
 Start the service:
 node server.js
 
 
-Test:
-http://localhost:3000/ → Hello, world!
+Test: <br>
+http://localhost:3000/ → Hello, world! <br>
 http://localhost:3000/secret → prompts for username & password → shows secret message
 
 🐳 Run with Docker
 
-Build the image:
+## Build the image:<br>
 docker build -t node-docker-service .
 
 
-Run the container (with .env):
+## Run the container (with .env):<br>
 docker run -p 3000:3000 --env-file .env node-docker-service
 
 
-Open in browser:
-http://localhost:3000/
+Open in browser: <br>
+http://localhost:3000/ <br>
 http://localhost:3000/secret
 
 🚀 Deployment (Coming Soon)
