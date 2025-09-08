@@ -74,3 +74,5 @@ Secrets management (for credentials and environment variables)
 
 This project is for learning purposes. Feel free to fork and modify.
 
+https://roadmap.sh/projects/dockerized-service-deployment
+
