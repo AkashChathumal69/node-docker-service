@@ -1,11 +1,11 @@
-# Node.js Dockerized Service 🚀
+# Node.js Dockerized Service
 
 A simple **Node.js + Express service** with two routes, containerized using Docker.  
 The service is ready for deployment via GitHub Actions to a remote server.
 
 ---
 
-## ✨ Features
+## Features
 - `/` → returns **Hello, world!**
 - `/secret` → protected by **Basic Auth**, returns a secret message
 - Configurable via `.env` file
@@ -14,15 +14,14 @@ The service is ready for deployment via GitHub Actions to a remote server.
 
 ---
 
-## 📂 Project Structure
-.
-├── .dockerignore         <br>
-├── .gitignore           <br>
-├── Dockerfile           <br>
-├── package.json          <br>
-├── server.js             <br>
-├── .env (ignored)        <br>
-└── README.md           <br>
+## Project Structure
+ .dockerignore         <br>
+ .gitignore           <br>
+ Dockerfile           <br>
+ package.json          <br>
+ server.js             <br>
+ .env (ignored)        <br>
+ README.md           <br>
 
 
 ---
